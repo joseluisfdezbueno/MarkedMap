@@ -5,7 +5,7 @@ Example App using Google Maps SDK for iOS. Using google markers for painting poi
 MarkedMap App was developed in **Swift5 with RxSwift and GoogleMaps SDK. Following a reactive architecture, communication between interfaces, dependency injection and separation between business logic and view**. 
   
    
-   ![alt text](https://github.com/joseluisfdezbueno/MarkedMap/blob/master/Docs/marker_map_app_screen.png). 
+   ![alt text](https://github.com/joseluisfdezbueno/MarkedMap/blob/master/Docs/marker_map_app.png). 
    
    
 # Architecture
