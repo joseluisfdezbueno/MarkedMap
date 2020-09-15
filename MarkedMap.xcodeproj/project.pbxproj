@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		03ED7A7D250E09470003C2A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7A7C250E09470003C2A7 /* AppDelegate.swift */; };
 		03ED7A7F250E09470003C2A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7A7E250E09470003C2A7 /* SceneDelegate.swift */; };
-		03ED7A84250E09470003C2A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03ED7A82250E09470003C2A7 /* Main.storyboard */; };
 		03ED7A86250E094A0003C2A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03ED7A85250E094A0003C2A7 /* Assets.xcassets */; };
 		03ED7A89250E094A0003C2A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03ED7A87250E094A0003C2A7 /* LaunchScreen.storyboard */; };
 		03ED7A92250E0A6E0003C2A7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7A90250E0A6E0003C2A7 /* MapViewController.swift */; };
@@ -65,7 +64,6 @@
 		03ED7A79250E09470003C2A7 /* MarkedMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkedMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03ED7A7C250E09470003C2A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03ED7A7E250E09470003C2A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03ED7A83250E09470003C2A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03ED7A85250E094A0003C2A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03ED7A88250E094A0003C2A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03ED7A8A250E094A0003C2A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 				03ED7A8A250E094A0003C2A7 /* Info.plist */,
 				03ED7A87250E094A0003C2A7 /* LaunchScreen.storyboard */,
 				03ED7ACE25109ACD0003C2A7 /* Localizable.strings */,
-				03ED7A82250E09470003C2A7 /* Main.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -420,7 +417,6 @@
 				03ED7ACF25109ACD0003C2A7 /* Localizable.strings in Resources */,
 				03ED7A89250E094A0003C2A7 /* LaunchScreen.storyboard in Resources */,
 				03ED7A86250E094A0003C2A7 /* Assets.xcassets in Resources */,
-				03ED7A84250E09470003C2A7 /* Main.storyboard in Resources */,
 				03ED7A93250E0A6E0003C2A7 /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -559,14 +555,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		03ED7A82250E09470003C2A7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03ED7A83250E09470003C2A7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		03ED7A87250E094A0003C2A7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -700,7 +688,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LZQ8WH64A9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MarkedMap/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -722,7 +710,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LZQ8WH64A9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MarkedMap/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
