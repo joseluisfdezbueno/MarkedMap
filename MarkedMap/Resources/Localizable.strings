@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  MarkedMap
+
+  Created by Jose Luis Fernandez on 15/09/2020.
+  Copyright © 2020 joseluisfdezbueno. All rights reserved.
+*/
+
+// Errors
+"default_error_alert_title" = "Error";
+"default_error_alert_message" = "An error occurred. Please try again later";

@@ -3,27 +3,99 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		03ED7A7D250E09470003C2A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7A7C250E09470003C2A7 /* AppDelegate.swift */; };
 		03ED7A7F250E09470003C2A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7A7E250E09470003C2A7 /* SceneDelegate.swift */; };
-		03ED7A81250E09470003C2A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7A80250E09470003C2A7 /* ViewController.swift */; };
 		03ED7A84250E09470003C2A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03ED7A82250E09470003C2A7 /* Main.storyboard */; };
 		03ED7A86250E094A0003C2A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03ED7A85250E094A0003C2A7 /* Assets.xcassets */; };
 		03ED7A89250E094A0003C2A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03ED7A87250E094A0003C2A7 /* LaunchScreen.storyboard */; };
+		03ED7A92250E0A6E0003C2A7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7A90250E0A6E0003C2A7 /* MapViewController.swift */; };
+		03ED7A93250E0A6E0003C2A7 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03ED7A91250E0A6E0003C2A7 /* MapViewController.xib */; };
+		03ED7A98250FFA360003C2A7 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7A97250FFA360003C2A7 /* UIColor+Extensions.swift */; };
+		03ED7A9F251094D00003C2A7 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7A9E251094D00003C2A7 /* MapPresenter.swift */; };
+		03ED7AA9251095DE0003C2A7 /* MarkedMapCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ED7AA7251095DE0003C2A7 /* MarkedMapCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03ED7AAC251095DE0003C2A7 /* MarkedMapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03ED7AA5251095DE0003C2A7 /* MarkedMapCore.framework */; };
+		03ED7AAD251095DE0003C2A7 /* MarkedMapCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03ED7AA5251095DE0003C2A7 /* MarkedMapCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03ED7AB42510962D0003C2A7 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7AB32510962D0003C2A7 /* URLRequest+Extensions.swift */; };
+		03ED7ABB251096C90003C2A7 /* CompanyZoneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7ABA251096C90003C2A7 /* CompanyZoneType.swift */; };
+		03ED7ABD251096EA0003C2A7 /* PointOfInterestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7ABC251096EA0003C2A7 /* PointOfInterestModel.swift */; };
+		03ED7AC0251097370003C2A7 /* MapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7ABF251097370003C2A7 /* MapService.swift */; };
+		03ED7AC2251097460003C2A7 /* MapServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7AC1251097460003C2A7 /* MapServiceProtocol.swift */; };
+		03ED7AC4251098710003C2A7 /* MapNetApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7AC3251098710003C2A7 /* MapNetApi.swift */; };
+		03ED7AC6251098B70003C2A7 /* MapNetRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7AC5251098B70003C2A7 /* MapNetRequestProvider.swift */; };
+		03ED7ACB25109A470003C2A7 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7ACA25109A470003C2A7 /* UIViewController+Extensions.swift */; };
+		03ED7ACD25109A810003C2A7 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7ACC25109A810003C2A7 /* String+Extensions.swift */; };
+		03ED7ACF25109ACD0003C2A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03ED7ACE25109ACD0003C2A7 /* Localizable.strings */; };
+		03ED7AD225109B170003C2A7 /* CoreFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7AD125109B170003C2A7 /* CoreFactoryProtocol.swift */; };
+		03ED7AD425109B230003C2A7 /* DefaultCoreFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7AD325109B230003C2A7 /* DefaultCoreFactory.swift */; };
+		03ED7AD625109B320003C2A7 /* ViewFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7AD525109B320003C2A7 /* ViewFactoryProtocol.swift */; };
+		03ED7AD825109B3B0003C2A7 /* DefaultViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED7AD725109B3B0003C2A7 /* DefaultViewFactory.swift */; };
+		3A74653B7528484A1D9DFBD8 /* Pods_MarkedMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B8CF9E4C6EB4CB656F4613 /* Pods_MarkedMap.framework */; };
+		7CF97A34F4FDC931AEA29756 /* Pods_MarkedMapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BDF63A61546A77BCBCFF51C /* Pods_MarkedMapCore.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03ED7AAA251095DE0003C2A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03ED7A71250E09470003C2A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03ED7AA4251095DE0003C2A7;
+			remoteInfo = MarkedMapCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03ED7AB1251095DE0003C2A7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03ED7AAD251095DE0003C2A7 /* MarkedMapCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		03ED7A79250E09470003C2A7 /* MarkedMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkedMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03ED7A7C250E09470003C2A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03ED7A7E250E09470003C2A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03ED7A80250E09470003C2A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		03ED7A83250E09470003C2A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03ED7A85250E094A0003C2A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03ED7A88250E094A0003C2A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03ED7A8A250E094A0003C2A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03ED7A90250E0A6E0003C2A7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		03ED7A91250E0A6E0003C2A7 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		03ED7A97250FFA360003C2A7 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		03ED7A9E251094D00003C2A7 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		03ED7AA5251095DE0003C2A7 /* MarkedMapCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarkedMapCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03ED7AA7251095DE0003C2A7 /* MarkedMapCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkedMapCore.h; sourceTree = "<group>"; };
+		03ED7AA8251095DE0003C2A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03ED7AB32510962D0003C2A7 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		03ED7ABA251096C90003C2A7 /* CompanyZoneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyZoneType.swift; sourceTree = "<group>"; };
+		03ED7ABC251096EA0003C2A7 /* PointOfInterestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestModel.swift; sourceTree = "<group>"; };
+		03ED7ABF251097370003C2A7 /* MapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapService.swift; sourceTree = "<group>"; };
+		03ED7AC1251097460003C2A7 /* MapServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapServiceProtocol.swift; sourceTree = "<group>"; };
+		03ED7AC3251098710003C2A7 /* MapNetApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapNetApi.swift; sourceTree = "<group>"; };
+		03ED7AC5251098B70003C2A7 /* MapNetRequestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapNetRequestProvider.swift; sourceTree = "<group>"; };
+		03ED7ACA25109A470003C2A7 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		03ED7ACC25109A810003C2A7 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		03ED7ACE25109ACD0003C2A7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		03ED7AD125109B170003C2A7 /* CoreFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreFactoryProtocol.swift; sourceTree = "<group>"; };
+		03ED7AD325109B230003C2A7 /* DefaultCoreFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCoreFactory.swift; sourceTree = "<group>"; };
+		03ED7AD525109B320003C2A7 /* ViewFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactoryProtocol.swift; sourceTree = "<group>"; };
+		03ED7AD725109B3B0003C2A7 /* DefaultViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewFactory.swift; sourceTree = "<group>"; };
+		2BDF63A61546A77BCBCFF51C /* Pods_MarkedMapCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarkedMapCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56B8CF9E4C6EB4CB656F4613 /* Pods_MarkedMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarkedMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		703C2EA9E7CB6964FC22079A /* Pods-MarkedMapCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkedMapCore.release.xcconfig"; path = "Target Support Files/Pods-MarkedMapCore/Pods-MarkedMapCore.release.xcconfig"; sourceTree = "<group>"; };
+		B0CC22450BC9BC3681BE31CC /* Pods-MarkedMapCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkedMapCore.debug.xcconfig"; path = "Target Support Files/Pods-MarkedMapCore/Pods-MarkedMapCore.debug.xcconfig"; sourceTree = "<group>"; };
+		B86A7A6E2CFE68B1A84033F5 /* Pods-MarkedMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkedMap.release.xcconfig"; path = "Target Support Files/Pods-MarkedMap/Pods-MarkedMap.release.xcconfig"; sourceTree = "<group>"; };
+		DF76468FCFF8B324C642118D /* Pods-MarkedMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarkedMap.debug.xcconfig"; path = "Target Support Files/Pods-MarkedMap/Pods-MarkedMap.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +103,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03ED7AAC251095DE0003C2A7 /* MarkedMapCore.framework in Frameworks */,
+				3A74653B7528484A1D9DFBD8 /* Pods_MarkedMap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03ED7AA2251095DE0003C2A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF97A34F4FDC931AEA29756 /* Pods_MarkedMapCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				03ED7A7B250E09470003C2A7 /* MarkedMap */,
+				03ED7AA6251095DE0003C2A7 /* MarkedMapCore */,
 				03ED7A7A250E09470003C2A7 /* Products */,
+				997B0DE0B66135DC60B56F35 /* Pods */,
+				CFBFBA68AFEF7C4E1D415758 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				03ED7A79250E09470003C2A7 /* MarkedMap.app */,
+				03ED7AA5251095DE0003C2A7 /* MarkedMapCore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,36 +142,237 @@
 		03ED7A7B250E09470003C2A7 /* MarkedMap */ = {
 			isa = PBXGroup;
 			children = (
-				03ED7A7C250E09470003C2A7 /* AppDelegate.swift */,
-				03ED7A7E250E09470003C2A7 /* SceneDelegate.swift */,
-				03ED7A80250E09470003C2A7 /* ViewController.swift */,
-				03ED7A82250E09470003C2A7 /* Main.storyboard */,
-				03ED7A85250E094A0003C2A7 /* Assets.xcassets */,
-				03ED7A87250E094A0003C2A7 /* LaunchScreen.storyboard */,
-				03ED7A8A250E094A0003C2A7 /* Info.plist */,
+				03ED7A99251093870003C2A7 /* Resources */,
+				03ED7A9A251093C10003C2A7 /* Source */,
 			);
 			path = MarkedMap;
 			sourceTree = "<group>";
 		};
+		03ED7A99251093870003C2A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				03ED7A85250E094A0003C2A7 /* Assets.xcassets */,
+				03ED7A8A250E094A0003C2A7 /* Info.plist */,
+				03ED7A87250E094A0003C2A7 /* LaunchScreen.storyboard */,
+				03ED7ACE25109ACD0003C2A7 /* Localizable.strings */,
+				03ED7A82250E09470003C2A7 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		03ED7A9A251093C10003C2A7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				03ED7A9B251093D90003C2A7 /* Domain */,
+				03ED7A9C251093E40003C2A7 /* Modules */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		03ED7A9B251093D90003C2A7 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				03ED7AC925109A1D0003C2A7 /* Extensions */,
+				03ED7AD025109B020003C2A7 /* Factories */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		03ED7A9C251093E40003C2A7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				03ED7AD925109C390003C2A7 /* App */,
+				03ED7A9D251094780003C2A7 /* Map */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		03ED7A9D251094780003C2A7 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				03ED7A9E251094D00003C2A7 /* MapPresenter.swift */,
+				03ED7A90250E0A6E0003C2A7 /* MapViewController.swift */,
+				03ED7A91250E0A6E0003C2A7 /* MapViewController.xib */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		03ED7AA6251095DE0003C2A7 /* MarkedMapCore */ = {
+			isa = PBXGroup;
+			children = (
+				03ED7ABE251097170003C2A7 /* Config */,
+				03ED7AB2251096010003C2A7 /* Extensions */,
+				03ED7AB5251096700003C2A7 /* Domains */,
+			);
+			path = MarkedMapCore;
+			sourceTree = "<group>";
+		};
+		03ED7AB2251096010003C2A7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03ED7AB32510962D0003C2A7 /* URLRequest+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		03ED7AB5251096700003C2A7 /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				03ED7AB6251096830003C2A7 /* Map */,
+			);
+			path = Domains;
+			sourceTree = "<group>";
+		};
+		03ED7AB6251096830003C2A7 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				03ED7AB7251096900003C2A7 /* Models */,
+				03ED7AB9251096A30003C2A7 /* NetApi */,
+				03ED7ABF251097370003C2A7 /* MapService.swift */,
+				03ED7AC1251097460003C2A7 /* MapServiceProtocol.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		03ED7AB7251096900003C2A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03ED7AB8251096960003C2A7 /* Enum */,
+				03ED7ABC251096EA0003C2A7 /* PointOfInterestModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		03ED7AB8251096960003C2A7 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				03ED7ABA251096C90003C2A7 /* CompanyZoneType.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		03ED7AB9251096A30003C2A7 /* NetApi */ = {
+			isa = PBXGroup;
+			children = (
+				03ED7AC3251098710003C2A7 /* MapNetApi.swift */,
+				03ED7AC5251098B70003C2A7 /* MapNetRequestProvider.swift */,
+			);
+			path = NetApi;
+			sourceTree = "<group>";
+		};
+		03ED7ABE251097170003C2A7 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				03ED7AA7251095DE0003C2A7 /* MarkedMapCore.h */,
+				03ED7AA8251095DE0003C2A7 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		03ED7AC925109A1D0003C2A7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03ED7ACC25109A810003C2A7 /* String+Extensions.swift */,
+				03ED7A97250FFA360003C2A7 /* UIColor+Extensions.swift */,
+				03ED7ACA25109A470003C2A7 /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		03ED7AD025109B020003C2A7 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				03ED7AD125109B170003C2A7 /* CoreFactoryProtocol.swift */,
+				03ED7AD325109B230003C2A7 /* DefaultCoreFactory.swift */,
+				03ED7AD525109B320003C2A7 /* ViewFactoryProtocol.swift */,
+				03ED7AD725109B3B0003C2A7 /* DefaultViewFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		03ED7AD925109C390003C2A7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				03ED7A7C250E09470003C2A7 /* AppDelegate.swift */,
+				03ED7A7E250E09470003C2A7 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		997B0DE0B66135DC60B56F35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF76468FCFF8B324C642118D /* Pods-MarkedMap.debug.xcconfig */,
+				B86A7A6E2CFE68B1A84033F5 /* Pods-MarkedMap.release.xcconfig */,
+				B0CC22450BC9BC3681BE31CC /* Pods-MarkedMapCore.debug.xcconfig */,
+				703C2EA9E7CB6964FC22079A /* Pods-MarkedMapCore.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CFBFBA68AFEF7C4E1D415758 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56B8CF9E4C6EB4CB656F4613 /* Pods_MarkedMap.framework */,
+				2BDF63A61546A77BCBCFF51C /* Pods_MarkedMapCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		03ED7AA0251095DE0003C2A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03ED7AA9251095DE0003C2A7 /* MarkedMapCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		03ED7A78250E09470003C2A7 /* MarkedMap */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03ED7A8D250E094A0003C2A7 /* Build configuration list for PBXNativeTarget "MarkedMap" */;
 			buildPhases = (
+				56BDE34DFD3379E43CCD06BA /* [CP] Check Pods Manifest.lock */,
 				03ED7A75250E09470003C2A7 /* Sources */,
 				03ED7A76250E09470003C2A7 /* Frameworks */,
 				03ED7A77250E09470003C2A7 /* Resources */,
+				FCF60998F34350905C58A704 /* [CP] Copy Pods Resources */,
+				83C1F8BEA9E353883B1C04C4 /* [CP] Embed Pods Frameworks */,
+				03ED7AB1251095DE0003C2A7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				03ED7AAB251095DE0003C2A7 /* PBXTargetDependency */,
 			);
 			name = MarkedMap;
 			productName = MarkedMap;
 			productReference = 03ED7A79250E09470003C2A7 /* MarkedMap.app */;
 			productType = "com.apple.product-type.application";
+		};
+		03ED7AA4251095DE0003C2A7 /* MarkedMapCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03ED7AAE251095DE0003C2A7 /* Build configuration list for PBXNativeTarget "MarkedMapCore" */;
+			buildPhases = (
+				5E6474ED9FE2268A14266019 /* [CP] Check Pods Manifest.lock */,
+				03ED7AA0251095DE0003C2A7 /* Headers */,
+				03ED7AA1251095DE0003C2A7 /* Sources */,
+				03ED7AA2251095DE0003C2A7 /* Frameworks */,
+				03ED7AA3251095DE0003C2A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarkedMapCore;
+			productName = MarkedMapCore;
+			productReference = 03ED7AA5251095DE0003C2A7 /* MarkedMapCore.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +386,10 @@
 				TargetAttributes = {
 					03ED7A78250E09470003C2A7 = {
 						CreatedOnToolsVersion = 11.7;
+					};
+					03ED7AA4251095DE0003C2A7 = {
+						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 				};
 			};
@@ -116,6 +407,7 @@
 			projectRoot = "";
 			targets = (
 				03ED7A78250E09470003C2A7 /* MarkedMap */,
+				03ED7AA4251095DE0003C2A7 /* MarkedMapCore */,
 			);
 		};
 /* End PBXProject section */
@@ -125,26 +417,146 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03ED7ACF25109ACD0003C2A7 /* Localizable.strings in Resources */,
 				03ED7A89250E094A0003C2A7 /* LaunchScreen.storyboard in Resources */,
 				03ED7A86250E094A0003C2A7 /* Assets.xcassets in Resources */,
 				03ED7A84250E09470003C2A7 /* Main.storyboard in Resources */,
+				03ED7A93250E0A6E0003C2A7 /* MapViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03ED7AA3251095DE0003C2A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56BDE34DFD3379E43CCD06BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarkedMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E6474ED9FE2268A14266019 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarkedMapCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83C1F8BEA9E353883B1C04C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarkedMap/Pods-MarkedMap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarkedMap/Pods-MarkedMap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarkedMap/Pods-MarkedMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCF60998F34350905C58A704 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarkedMap/Pods-MarkedMap-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarkedMap/Pods-MarkedMap-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarkedMap/Pods-MarkedMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		03ED7A75250E09470003C2A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03ED7A81250E09470003C2A7 /* ViewController.swift in Sources */,
 				03ED7A7D250E09470003C2A7 /* AppDelegate.swift in Sources */,
+				03ED7ACD25109A810003C2A7 /* String+Extensions.swift in Sources */,
+				03ED7A92250E0A6E0003C2A7 /* MapViewController.swift in Sources */,
+				03ED7AD625109B320003C2A7 /* ViewFactoryProtocol.swift in Sources */,
+				03ED7A9F251094D00003C2A7 /* MapPresenter.swift in Sources */,
 				03ED7A7F250E09470003C2A7 /* SceneDelegate.swift in Sources */,
+				03ED7ACB25109A470003C2A7 /* UIViewController+Extensions.swift in Sources */,
+				03ED7A98250FFA360003C2A7 /* UIColor+Extensions.swift in Sources */,
+				03ED7AD225109B170003C2A7 /* CoreFactoryProtocol.swift in Sources */,
+				03ED7AD825109B3B0003C2A7 /* DefaultViewFactory.swift in Sources */,
+				03ED7AD425109B230003C2A7 /* DefaultCoreFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03ED7AA1251095DE0003C2A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03ED7AB42510962D0003C2A7 /* URLRequest+Extensions.swift in Sources */,
+				03ED7ABB251096C90003C2A7 /* CompanyZoneType.swift in Sources */,
+				03ED7AC0251097370003C2A7 /* MapService.swift in Sources */,
+				03ED7AC6251098B70003C2A7 /* MapNetRequestProvider.swift in Sources */,
+				03ED7AC4251098710003C2A7 /* MapNetApi.swift in Sources */,
+				03ED7ABD251096EA0003C2A7 /* PointOfInterestModel.swift in Sources */,
+				03ED7AC2251097460003C2A7 /* MapServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03ED7AAB251095DE0003C2A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03ED7AA4251095DE0003C2A7 /* MarkedMapCore */;
+			targetProxy = 03ED7AAA251095DE0003C2A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		03ED7A82250E09470003C2A7 /* Main.storyboard */ = {
@@ -282,16 +694,21 @@
 		};
 		03ED7A8E250E094A0003C2A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF76468FCFF8B324C642118D /* Pods-MarkedMap.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MarkedMap/Info.plist;
+				DEVELOPMENT_TEAM = LZQ8WH64A9;
+				INFOPLIST_FILE = MarkedMap/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.joseluisfdezbueno.MarkedMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,18 +716,84 @@
 		};
 		03ED7A8F250E094A0003C2A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B86A7A6E2CFE68B1A84033F5 /* Pods-MarkedMap.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MarkedMap/Info.plist;
+				DEVELOPMENT_TEAM = LZQ8WH64A9;
+				INFOPLIST_FILE = MarkedMap/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.joseluisfdezbueno.MarkedMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03ED7AAF251095DE0003C2A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0CC22450BC9BC3681BE31CC /* Pods-MarkedMapCore.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LZQ8WH64A9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MarkedMapCore/Config/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joseluisfdezbueno.MarkedMapCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		03ED7AB0251095DE0003C2A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 703C2EA9E7CB6964FC22079A /* Pods-MarkedMapCore.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LZQ8WH64A9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MarkedMapCore/Config/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joseluisfdezbueno.MarkedMapCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -331,6 +814,15 @@
 			buildConfigurations = (
 				03ED7A8E250E094A0003C2A7 /* Debug */,
 				03ED7A8F250E094A0003C2A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03ED7AAE251095DE0003C2A7 /* Build configuration list for PBXNativeTarget "MarkedMapCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03ED7AAF251095DE0003C2A7 /* Debug */,
+				03ED7AB0251095DE0003C2A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
